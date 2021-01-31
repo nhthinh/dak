@@ -1,0 +1,251 @@
+﻿/* Portrait */
+@media screen and (orientation: portrait)
+{
+    /*master.css*/
+    /*****************************************************************************************/
+    .MasterHeader .logo
+    {
+        left:10px
+        }
+        .MasterHeader .tim-kiem
+        {
+            right:10px
+            }
+    .menu-master
+    {
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        top: inherit;
+        right: inherit;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .menu-master-list
+    {
+        display: table;
+        width: 100%;
+    }
+    .menu-master-list > div
+    {
+        display: table-cell;
+        padding-right: 0;
+    }
+    .menu-master-list > div > div
+    {
+        display: block;
+    }
+
+    .menu-master-list i
+    {
+        margin-right: 0;
+        font-size: 17pt;
+        margin-bottom: 6px;
+    }
+
+    /*default.css*/
+    /*****************************************************************************************/
+
+
+    .max-width-content
+    {
+        padding: 0 10px;
+    }
+
+    /*theme.css*/
+    /*****************************************************************************************/
+
+
+    /*Search Post*/
+    /****************************************/
+    .FilterSearch > div > div
+    {
+        display: block;
+    }
+    .FilterSearch .filter-item
+    {
+        max-width: 100%;
+    }
+
+    .FilterSearch .filter-item
+    {
+        padding: 10px 0;
+    }
+    .list-grid-view > div > div
+    {
+        width: 100%;
+    }
+    .MenuFilter .menu-filter-title > div:not(:last-child)
+    {
+        margin-right: 25px;
+    }
+    .MenuFilter .menu-filter-content-quan-huyen > div
+    {
+        width: 49%;
+    }
+    .dashboard-search
+    {
+        position: inherit;
+    }
+    .list-grid-view
+    {
+        padding-right: 0;
+    }
+    .GridSorting, .layout-grid-view
+    {
+        padding-right: 0;
+    }
+    .GridSorting
+    {
+        padding: 10px;
+    }
+    
+    .list-grid-view .list-item-more-info
+    {
+        display:block
+        }
+    /*My profile*/
+    /****************************************/
+    .my-filter-my-post > div > div.item-my-filter
+    {
+        max-width: 100%;
+    }
+
+    .my-filter-my-post > div > div:first-child
+    {
+        line-height: 35px;
+    }
+
+    .menu-my-profile > div > div
+    {
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .button-edit-my-profile
+    {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+    }
+
+    .button-edit-my-profile > div
+    {
+        width: 100%;
+    }
+
+    .menu-my-profile > div > div > div
+    {
+        width: 32%;
+        padding-bottom: 10px;
+    }
+    .menu-my-profile > div > div > div > div
+    {
+        line-height: 25px;
+    }
+    .my-profile-info .my-avatar i
+    {
+        font-size: 33pt;
+    }
+
+
+
+    /*Panel post Detail*/
+    /****************************************/
+
+    .post-detail-content
+    {
+        display: block;
+        width: 100%;
+        overflow: auto;
+    }
+    .post-detail-content > div
+    {
+        width: 100% !important;
+        height: auto;
+    }
+    .post-detail-photo > div:first-child
+    {
+        height: auto;
+    }
+    .post-detail-photo > div:not(:first-child)
+    {
+        display: none;
+    }
+
+    .post-detail-info .list-item-more-info > div
+    {
+        width: 100%;
+    }
+    .detail-info-scrolldiv
+    {
+        height: auto !important;
+    }
+    .post-detail-info .button-bar > div > div > div
+    {       
+        padding-right: 19px;
+    }
+    .post-detail-info .button-bar
+    {
+       position: fixed;
+    width: 100%;
+    top: 48px;
+    left: 0;
+    background-color: rgb(255 255 255 / 70%);
+    backdrop-filter: blur(30px);
+    color: #14417e;
+    padding-top: 0;
+    }
+    .post-detail-info .button-bar > div
+    {
+        padding: 5px 0;
+    }
+    .detail-info-logo
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        margin-top: 0;
+        padding: 10px 0;
+        z-index: 11;
+        width:100%;
+        text-align:center
+    }
+
+    .post-detail-header-icon
+    {
+        display: none;
+    }
+
+    .post-detail-icon-back
+    {
+        display: inline-block;
+        float: left;
+        margin-left:10px;
+        color:#14417e
+    }
+    .post-detail-icon-back i
+    {
+        font-size: 15pt;
+    }
+    .post-detail-content > div:nth-child(1)
+    {
+        margin-top:100px
+        }
+        
+        .post-detail-photo > div img
+        {
+            width:auto;
+            height:auto
+            }
+}
+
+.lien-he-nguoi-dang > div > div
+{
+        width: 100%;
+    }
+.dat-lich-hen .chon-ngay > div > div
+{
+    min-width:inherit
+    }

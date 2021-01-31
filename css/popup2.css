@@ -1,0 +1,152 @@
+﻿
+/*Popup*/
+
+.ProcessingIcon {
+    position: fixed;
+    z-index: 115;
+    background-color: rgba(255, 255, 255, 0.72);
+    display: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+    .ProcessingIcon p {
+        margin: 10px;
+        cursor:pointer
+    }
+    .ProcessingIcon p:hover {
+        color:#65a1ec
+    }
+
+.clsPopupBG_Processing {
+    z-index: 114;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(225, 225, 225, 0.37);
+    display: none;
+}
+
+/*popup*/
+.clsClosePopup, .clsClosePopup2, .clsClosePopup_Html, .clsClosePopup_Message {
+    top: 2px;
+    right: 3px;
+    position: absolute;
+}
+
+.clsClosePopup, .clsClosePopup2, .clsClosePopup_Html, .clsPopupTooltip_Close, .clsClosePopup_Message {
+    cursor: pointer;
+    font-weight: bold;
+    /* color: #fff; */
+    font-style: italic;
+    /* background-color: #666666; */
+    border-radius: 32px;
+    height: 32px;
+    width: 32px;
+    /* border: 5px solid #fff; */
+    text-align: center;
+    line-height: 34px;
+    font-size: 18pt;
+}
+
+.clsPopupPannel > h1, .clsPopupPannel2 > h1, .clsPopupPannel_Html > h1, .clsPopupTootip > h1 {
+    border-radius: 5px 5px 0 0;
+    padding: 12px 20px 10px;
+    text-shadow: 0 1px 1px #fff;
+    background: #f6f6f6;
+    border-bottom: #ddd 1px solid;
+}
+
+.clsPopupPannel_Message {
+    z-index: 108 !important;
+}
+.clsPopupPannel, .clsPopupPannel_Html, .clsPopupPannel_Message {
+    z-index: 106;
+}
+.clsPopupPannel2 {
+    z-index: 108;
+}
+.clsPopupPannel, .clsPopupPannel2, .clsPopupPannel_Html, .clsPopupPannel_Message {
+    position: fixed;
+    background-color: #fff;
+    max-width: 96%;
+    max-height: 96%;
+    display: none;
+    border-radius: 5px;
+    /*min-width: 200px;*/
+}
+
+    .clsPopupPannel > div, .clsPopupPannel2 > div, .clsPopupPannel_Html > div, .clsPopupPannel_Message > div {
+        overflow: auto;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        /*min-width: 300px;*/
+        text-align: center;
+        padding: 20px;
+    }
+
+.clsPopupPannel_Html {
+    display: none;
+}
+
+.clsPopupBG_Message {
+    z-index: 107 !important;
+}
+.clsPopupBG, .clsPopupBG_Message {
+    z-index: 102;
+}
+.clsPopupBG2 {
+    z-index: 107;
+}
+    .clsPopupBG, .clsPopupBG2, .clsPopupBG_Message {   
+    position: fixed;
+    top: 0;
+    left: 0;
+        background-color: rgb(141 136 136 / 68%);   
+    backdrop-filter: blur(60px);
+    display: none;
+}
+
+/*Popup content*/
+.clsPopupContentDefault {
+    margin: 0 auto;
+    text-align: left;
+    min-width:200px
+}
+
+    .clsPopupContentDefault td {
+        padding: 5px 10px 5px 10px;
+        vertical-align: top;
+    }
+
+    .clsPopupContentDefault input, .clsPopupContentDefault select, .clsPopupContentDefault textarea {
+        
+    }
+    .clsPopupContentDefault .clsDefTextBox{
+        width:calc(100% - 25px);
+    }
+
+div.pvv-localdatetime table{
+    width:100%;
+}
+div.pvv-localdatetime tr {
+    width: 100%;
+}
+div.pvv-localdatetime tr:first-child td {
+    padding:0px 10px 0px 10px !important;
+}
+div.pvv-localdatetime table tr td:first-child {
+    text-align:left;
+    
+}
+    div.pvv-localdatetime table tr td:last-child {
+        text-align: right;
+    }
+
+input[type=checkbox], input[type=radio], input[type=button], input[type=submit] {
+    width: auto;
+}
