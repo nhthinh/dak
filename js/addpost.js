@@ -6,12 +6,21 @@
         type: "GET",
         cache: false,
         success: function (content) {
-            ShowPopup('Đăng tin', content, null);
+            var opt = [{
+                name: "Tiếp tục", fClick: function () {
+                    ClosePopup();
+                }
+            },{
+                name: "Hủy", fClick: function () {
+                    ClosePopup();
+                    }, className: "button-light"
+            }];
+            ShowPopup('Đăng tin', content, opt);
             // dang ky event
             $('#txtDiachi').blur(function () { alert();});
         },
         error: function (e) {
-       
+
         }
     });
  
@@ -26,7 +35,16 @@ function ChonLoai(iloadi) {
         type: "GET",
         cache: false,
         success: function (content) {
-            ShowPopup('Đăng tin', content, null);
+            var opt = [{
+                name: "Tiếp tục", fClick: function () {
+                    ClosePopup();
+                }
+            }, {
+                    name: "Hủy", fClick: function () {
+                        ClosePopup();
+                    }, className: "button-light"
+                }];
+            ShowPopup('Đăng tin', content, opt);
            
         },
         error: function (e) {

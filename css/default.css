@@ -108,11 +108,12 @@ input[type=button].button-dark,div.button-dark
      background:  #ddecff;
       color:#14417e;      
     }
-    
-    
-.button-light i,.button-dark i
-{
-    margin-right:10px
+
+
+    .button-light i, .button-dark i {
+        font-size: 25px;
+        vertical-align: text-bottom;
+        margin-right: 10px;
     }
 
 

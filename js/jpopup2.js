@@ -82,16 +82,19 @@ function HideProcessing() {
 var popup, bgpopup;
 function ShowPopup(tilte, content, option) {
     ClosePopup();
-    var str = '<div class="clsPopupPannel"><h2 class="clsClosePopup">×</h2>';
+    var str = '<div class="clsPopupPannel"><div class="popup-logo"><img src="image/logo.png" /></div><h2 class="clsClosePopup"><i class="fas fa-window-close"></i></h2>';
     if (tilte != '')
         str += '<h1 class="lblColor clsTitlePopup">' + tilte + '</h1>';
     str += '<div><table class="clsPopupContentDefault">';
     str += ' <tr><td align="center"><div class="clsSrollContent">' + content + '</div></td>  </tr>';
-    str += '<tr><td align="center" id="tdControlButton">';
+    str += '</table></div>';
+
+    str += '<div id="tdControlButton" class="popup-content-button">';
     if (option == null) {
-        str += '<input type="button" value="OK"  name="btnCancel" />';
+        str += '<input type="button" value="Đóng"  name="btnCancel" class="button-dark"/>';
     }
-    str += '</td> </tr></table></div></div>';
+    str += '</div></div>';
+
     str += '<div class="clsPopupBG"></div>';
     $('body').append(str);
     if (option != null && option.length > 0) {
@@ -103,6 +106,11 @@ function ShowPopup(tilte, content, option) {
                 Ctrl.value =  option[i].name;
                 Ctrl.id = option[i].id == null ? 'btnImgControl_' + i : option[i].id;
                 Ctrl.onclick = option[i].fClick;
+                if (option[i].className != null)
+                    Ctrl.className = option[i].className;
+                else
+                    Ctrl.className = "button-dark";
+
                 $('#tdControlButton').append(Ctrl);
                 $('#tdControlButton').append(' ');
             }
@@ -122,10 +130,10 @@ function ShowPopup(tilte, content, option) {
     Pagesize = getPageSize();
     var windowHeight = Pagesize.height;
     var maxheightcontent = windowHeight - parseInt($('.clsTitlePopup').innerHeight()) - parseInt($('#tdControlButton').innerHeight()) - 90;
-    $('.clsSrollContent').css({ 'overflow': 'auto', 'max-height': maxheightcontent })
+    $('.clsSrollContent').css({ 'overflow': 'auto', 'max-height': maxheightcontent });
 
-    $('.clsClosePopup,.clsPopupBG').unbind("click");
-    $('.clsClosePopup,.clsPopupBG').click(function () {
+    $('.clsClosePopup').unbind("click");
+    $('.clsClosePopup').click(function () {
         ClosePopup();
     });
 
@@ -189,16 +197,19 @@ function ShowBackgroundPopup() {
 var popup2, bgpopup2;
 function ShowPopup2(tilte, content, option) {
     ClosePopup2();
-    var str = '<div class="clsPopupPannel2"><h2 class="clsClosePopup2">×</h2>';
+    var str = '<div class="clsPopupPannel2"><div class="popup-logo"><img src="image/logo.png" /></div><h2 class="clsClosePopup2"><i class="fas fa-window-close"></i></h2>';
     if (tilte != '')
         str += '<h1 class="lblColor clsTitlePopup2">' + tilte + '</h1>';
     str += '<div><table class="clsPopupContentDefault">';
-    str += ' <tr><td align="center"><div class="clsSrollContent">' + content + '</div></td>  </tr>';
-    str += '<tr><td align="center" id="tdControlButton2">';
+    str += ' <tr><td align="center"><div class="clsSrollContent">' + content + '</div></td>  </tr>';   
+    str += '</table></div></div>';
+
+    str += '<div id="tdControlButton2" class="popup-content-button">';
     if (option == null) {
-        str += '<input type="button" value="OK"  name="btnCancel2" />';
+        str += '<input type="button" value="Đóng"  name="btnCancel2" class="button-dark"/>';
     }
-    str += '</td> </tr></table></div></div>';
+    str += '</div></div>';
+
     str += '<div class="clsPopupBG2"></div>';
     $('body').append(str);
     if (option != null && option.length > 0) {
@@ -210,6 +221,7 @@ function ShowPopup2(tilte, content, option) {
                 Ctrl.value = option[i].name;
                 Ctrl.id = 'btnImgControl2_' + i;
                 Ctrl.onclick = option[i].fClick;
+                Ctrl.className = "button-dark";
                 $('#tdControlButton2').append(Ctrl);
                 $('#tdControlButton2').append(' ');
             }
@@ -229,10 +241,10 @@ function ShowPopup2(tilte, content, option) {
     Pagesize = getPageSize();
     var windowHeight = Pagesize.height;
     var maxheightcontent = windowHeight - parseInt($('.clsTitlePopup2').innerHeight()) - parseInt($('#tdControlButton2').innerHeight()) - 90;
-    $('.clsSrollContent2').css({ 'overflow': 'auto', 'max-height': maxheightcontent })
+    $('.clsSrollContent2').css({ 'overflow': 'auto', 'max-height': maxheightcontent });
 
-    $('.clsClosePopup2,.clsPopupBG2').unbind("click");
-    $('.clsClosePopup2,.clsPopupBG2').click(function () {
+    $('.clsClosePopup2').unbind("click");
+    $('.clsClosePopup2').click(function () {
         ClosePopup2();
     });
 
