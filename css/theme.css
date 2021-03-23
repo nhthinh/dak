@@ -17,6 +17,7 @@
 {
     display: inline-block;
     vertical-align: top;
+    min-height:50px
 }
 .FilterSearch .filter-item
 {
@@ -393,26 +394,25 @@
     color: #14417e;
     font-size: 10pt;
 }
-.dia-chi:hover > div:nth-child(2)
-{
-    text-decoration: underline;
-    cursor: pointer;
-}
-.dia-chi > div
-{
-    display: inline-block;
-}
-.dia-chi > div
-{
-    display: inline-block;
-    vertical-align: top;
-}
-.dia-chi > div:nth-child(1)
-{
-    width: 18px;
-    font-size: 12pt;
-    text-align: center;
-}
+ 
+    .dia-chi:hover > div:nth-child(2) {
+        text-decoration: underline;
+        cursor: pointer;
+       
+    }
+
+    .dia-chi > div {
+        display: inline-block;
+        vertical-align: top;
+    }
+        .dia-chi > div:nth-child(1) {
+            width: 18px;            
+            text-align: center;
+            padding-top: 5px
+        }
+        .dia-chi > div:nth-child(1) i{
+           font-size:15px
+        }
 .dia-chi > div:nth-child(2)
 {
     width: calc(100% - 25px);
