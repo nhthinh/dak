@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAK_MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,9 @@ namespace DAK_MVC.Controllers
         // GET: DAK
         public ActionResult homepage()
         {
+            // 
+            List<Post> lstPosts = new List<Post>() {  new Post(1), new Post(2), new Post(3)};
+            ViewBag.Message = lstPosts;
             return View("homepage");
         }
         public ActionResult addpost()
