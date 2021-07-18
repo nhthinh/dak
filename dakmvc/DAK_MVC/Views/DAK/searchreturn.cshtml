@@ -1,0 +1,1390 @@
+﻿
+@{
+    ViewBag.Title = "searchreturn";
+}
+
+<div name="content-tim-kiem">
+    <div class="MenuFilter">
+        <div class="max-width-content">
+            <div>
+                <div class="menu-filter-title">
+                    <div>
+                        Loại BĐS
+                    </div>
+                    <div>
+                        TP
+                    </div>
+                    <div class="active">
+                        Quận/Huyện
+                    </div>
+                    <div>
+                        Nâng cao
+                    </div>
+                </div>
+                <div class="menu-filter-content">
+                    <div class="menu-filter-content-loai-bds block-default res-portrait">
+                        <div class="title">Loại BĐS</div>
+                        <div class="block-default listitem">
+                            <div>
+                                <label class="radio-default">
+                                    Căn hộ
+                                    <input type="radio" checked="checked" name="loaibds" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="radio-default">
+                                    Nhà đất
+                                    <input type="radio" checked="checked" name="loaibds" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="radio-default">
+                                    Đất nền
+                                    <input type="radio" checked="checked" name="loaibds" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="radio-default">
+                                    Dự án
+                                    <input type="radio" checked="checked" name="loaibds" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-filter-content-tinh-tp block-default res-portrait">
+                        <div class="title">Thành Phố</div>
+                        <div class="block-default listitem">
+                            <div>
+                                <label class="radio-default">
+                                    Hồ Chí Minh
+                                    <input type="radio" checked="checked" name="sophongngu" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="radio-default">
+                                    Hà Nội
+                                    <input type="radio" checked="checked" name="sophongngu" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="radio-default">
+                                    Đà Nẵng
+                                    <input type="radio" checked="checked" name="sophongngu" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="radio-default">
+                                    Đồng Tháp
+                                    <input type="radio" checked="checked" name="sophongngu" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-filter-content-quan-huyen active block-default res-portrait">
+                        <div class="title">Quận / Huyện</div>
+                        <div class="block-default listitem">
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận 1 <span class="item-count">(1)</span>
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận 2 <span class="item-count">(1)</span>
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận 3 <span class="item-count">(1)</span>
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận 7 <span class="text-style-4">(1)</span>
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận Bình Thạnh <span class="text-style-4">(1)</span>
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận Gò Vấp <span class="text-style-4">(1)</span>
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận Phú Nhuận <span class="text-style-4">(1)</span>
+                                    <input type="checkbox" checked="checked" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="checkbox-default">
+                                    Quận Thủ Đức <span class="text-style-4">(1)</span>
+                                    <input type="checkbox" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-filter-content-nang-cao">
+                        <div class="title">Nâng Cao</div>
+                        <div>
+                            <div class="title">
+                                Phòng ngủ
+                            </div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <label class="radio-default">
+                                            1
+                                            <input type="radio" checked="checked" name="sophongngu" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="radio-default">
+                                            2
+                                            <input type="radio" checked="checked" name="sophongngu" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="radio-default">
+                                            3
+                                            <input type="radio" checked="checked" name="sophongngu" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title">
+                                Nhà vệ sinh
+                            </div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <label class="radio-default">
+                                            1
+                                            <input type="radio" checked="checked" name="sophongngu" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="radio-default">
+                                            2
+                                            <input type="radio" checked="checked" name="sophongngu" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="radio-default">
+                                            3
+                                            <input type="radio" checked="checked" name="sophongngu" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="FilterSearch">
+        <div class="max-width-content">
+            <div>
+
+                <div class="filter-item">
+                    <div>
+                        Chung cư <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Hồ Chí Minh <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận Thủ Đưc <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 1 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 2 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 3 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 4 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 5 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 6 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div>
+                        Quận 7 <i class="fas fa-times-circle"></i>
+                    </div>
+                    <span class="loc-xoa-tat-ca">Xóa tất cả </span>
+                </div>
+                <div class="filter-button">
+                    <div class="button-light">
+                        <i class="fas fa-search"></i>Tìm kiếm
+                    </div>
+                    <div class="button-light">
+                        <i class="fas fa-save"></i>Lưu tìm kiếm
+                    </div>
+                    <div class="button-dark" onclick="CloseMenuFilter(this);">
+                        <i class="fas fa-caret-up"></i>Đóng
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="GridViewSearch">
+        <div class="GridSorting">
+            <div>
+                190 Kết Quả Tìm Kiếm
+            </div>
+            <div>
+                Sắp Xếp Theo:
+                <select style="margin-left: 10px; width: 150px">
+                    <option>Mới Nhất</option>
+                </select>
+            </div>
+        </div>
+        <div class="layout-grid-view">
+            <div class="list-grid-view">
+                <div>
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+
+                    <div class="quang-cao-1"><img src="image/qc1.PNG" /></div>
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                    <!--begin Item-->
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="photo-info-summary">
+                                        <img src="image/house.png" class="nha" />
+                                        <span class="trai-tim">10+ <i class="far fa-heart "></i></span><span class="hinh-anh">
+                                            1/10 <i class="far fa-image"></i>
+                                        </span><span class="gia-tien">1 tỷ</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                        </span>
+                                        <div class="tien-ich">
+                                            <div class="item-info-1">
+                                                <div>
+                                                    <div>
+                                                        <span><i class="fas fa-bed"></i>2 </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                                        </span><span>
+                                                            <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                                            </i>50m2
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class="fas fa-book-open"></i></span><span>
+                                                            <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                                            <span>
+                                                                <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                                                   onclick="OpendViewMoreInfoItem(this);"></i>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div style="display: none">
+                                                        <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                                            <i class="fas fa-caret-down"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-view-more-info">
+                                            <div class="list-item-more-info">
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                    </div>
+                                                    <div>
+                                                        Giá
+                                                    </div>
+                                                    <div>
+                                                        1 Tỷ
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-bed"></i>
+                                                    </div>
+                                                    <div>
+                                                        Phòng Ngủ
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-toilet"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Vệ Sinh
+                                                    </div>
+                                                    <div>
+                                                        2
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-ruler-combined"></i>
+                                                    </div>
+                                                    <div>
+                                                        Diện Tích
+                                                    </div>
+                                                    <div>
+                                                        50 (m2) <span class="kich-thuot">
+                                                            <br />
+                                                            (ngang 5m x dọc 10m)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-book-open"></i>
+                                                    </div>
+                                                    <div>
+                                                        Pháp Lý
+                                                    </div>
+                                                    <div>
+                                                        Sổ Hồng
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <i class="fas fa-hand-holding-usd"></i>
+                                                    </div>
+                                                    <div>
+                                                        Ngân Hàng
+                                                    </div>
+                                                    <div>
+                                                        Techcombank
+                                                    </div>
+                                                </div>
+                                                <div style="display: none">
+                                                    <div>
+                                                        <i class="fas fa-car"></i>
+                                                    </div>
+                                                    <div>
+                                                        Nhà Hẻm
+                                                    </div>
+                                                    <div>
+                                                        Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                                                <i class="fas fa-times-circle"></i>
+                                            </div>
+                                            <div class="link-detail-more">
+                                                Xem Chi Tiết
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dia-chi">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            167 Trần Trọng Cung, P.Tân Thuận Đông, Q.7, HCM
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info-3">
+                                    <div class="ten-nguoi-dung">
+                                        <i class="far fa-user"></i>Hoàng Quan
+                                    </div>
+                                    <div class="date-time">
+                                        1 ngày trước
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Item-->
+                    <div class="quang-cao-2">
+                        <div>
+                            <img src="image/qc2.PNG" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-search">
+                <div>
+                    <img src="image/styled-mode-column-default.png" />
+                </div><div>
+                    <img src="image/aaaaa.png" />
+                </div><div>
+                    <img src="image/styled-mode-column-default.png" />
+                </div><div>
+                    <img src="image/aaaaa.png" />
+                </div> <div>
+                    <img src="image/styled-mode-column-default.png" />
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,276 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.max-width-content
+{
+   
+    max-width: 999px;
+    display: block;
+    margin: 0 auto;
+}
+.text-style-1
+{
+    font-size: 16pt;
+    font-weight: bold;
+}
+.text-style-2
+{
+    font-size: 12pt;
+    font-weight: bold;
+}
+.text-style-3
+{
+    font-size: 10pt;
+    font-weight: bold;
+}
+.text-style-4
+{
+    font-size: 9pt;
+    font-weight: normal;
+}
+input[type=text],select,textarea
+{
+    padding: 0 6px;
+    font-size: 12px;
+    height: 32px;
+    line-height: 1.5em;
+    border: 1px solid #A7A6AB;
+   
+    box-shadow: inset 0 2px 2px #F9F9FB, 0 0 0 #62aef7;
+     border-radius:10px
+}
+input[type=text].hasicon
+{
+    padding-right: 40px;
+}
+input[type=text].hasicon + .fas
+{
+    padding-right: 18px;
+    margin-left: -30px;
+}
+
+input[type=button],.button-light,.button-dark
+{
+    -webkit-font-smoothing: antialiased;
+    margin: 0px;
+    letter-spacing: 0px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s ease 0s;
+    user-select: none;
+    cursor: pointer;
+    
+    background: rgb(255 255 255 / 0%);
+    border: 1px solid transparent;
+    
+    color: #fff;
+    font-size: 12pt;
+    font-weight: 400;
+  
+    outline: none;
+    overflow: hidden;
+    padding: .375rem .75rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+        display: inline-block;
+        vertical-align:middle;
+    
+    border-radius:.25rem;
+    line-height: 1.9;
+}
+
+input[type=button].button-dark,div.button-dark
+{
+     background:  #14417e;
+      color:#fff;
+      border:1px solid #14417e;
+    }
+    input[type=button].button-light,div.button-light
+{
+     background:  #fff;
+      color:#14417e;
+      border:1px solid #14417e;
+    }
+    
+    input[type=button].button-dark:hover,div.button-dark:hover
+{
+     background:  #8baad4;
+      color:#fff;      
+    }
+    input[type=button].button-light:hover,div.button-light:hover
+{
+     background:  #ddecff;
+      color:#14417e;      
+    }
+
+
+    .button-light i, .button-dark i {
+        font-size: 25px;
+        vertical-align: text-bottom;
+        margin-right: 10px;
+    }
+
+
+
+/*checkbox*/
+/*****************************************************************************************/
+
+/* The container */
+.checkbox-default {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+ 
+  cursor: pointer;
+ line-height:20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-default input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-default .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+   border-radius:10px
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-default:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-default input:checked ~ .checkmark {
+  /*background-color: #14417e;*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-default .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-default input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-default .checkmark:after {
+  left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+  border: solid #14417e;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*radio*/
+/*****************************************************************************************/
+/* The container */
+.radio-default {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+ line-height:20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-default input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-default .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-default:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-default input:checked ~ .checkmark {
+ 
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-default .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-default input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-default .checkmark:after {
+ 	top: 6px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+	border-radius: 50%;
+	background: #14417e;
+}
+
+
+.div-row > div
+{
+    display:inline-block;
+    vertical-align:middle
+    }
+    
+    
+    .select-form-default > div
+    {
+        padding:5px 0
+        }
+        
+         .select-form-default > div:nth-child(2) > div
+    {
+       border-bottom: 1px solid #eee;
+       padding:5px 0
+        }

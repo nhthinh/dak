@@ -1,0 +1,114 @@
+﻿@using System.Web.Optimization
+@using System.Web.Mvc
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+
+    <script src="https://kit.fontawesome.com/7f069fe4dd.js" crossorigin="anonymous"></script>
+
+
+    @Scripts.Render("~/js/jquery-3.5.1.min.js")
+
+    <link rel="icon" href="~/images/logo.png" type="~/image/icon type" />
+    @Styles.Render("~/js/jquery-ui.css")
+    @Styles.Render("~/css/popup2.css")
+   @Styles.Render("~/css/reset.css")
+   @Styles.Render("~/css/default.css")
+   @Styles.Render("~/css/master.css")
+   @Styles.Render("~/css/theme.css")
+   @Styles.Render("~/css/responsive.css")
+    @Scripts.Render("~/js/jquery-ui.min.js")
+    @Scripts.Render("~/js/master.js")
+    @Scripts.Render("~/js/addpost.js")
+    @Scripts.Render("~/js/search.js")
+    @Scripts.Render("~/js/Common.js")
+    @Scripts.Render("~/js/jpopup2.js")
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+          rel="stylesheet" />
+    <title></title>
+
+
+
+</head>
+<body>
+    <div class="MasterHeader">
+        <div class="max-width-content">
+            <div>
+                <div class="logo">
+                    <img src="~/images/logo.png" />
+                    <span>DAK</span>
+                </div>
+                <div class="menu-master">
+                    <div class="menu-master-list">
+                        <div name="content-trang-chu">
+                            <div>
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div>
+                                Trang chủ
+                            </div>
+                        </div>                      
+                        <div name="content-dang-tin" onclick="AddPost(this);" actiondata="/DAK/addpost">
+                            <div>
+                                <i class="fas fa-plus-square"></i>
+                            </div>
+                            <div>
+                                Đăng tin                                
+                            </div>
+                        </div>
+                        <div name="content-thong-bao">
+                            <div>
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div>
+                                Thông báo
+                            </div>
+                        </div>
+                        <div name="content-tin-nhan">
+                            <div>
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                Tin nhắn
+                            </div>
+                        </div>
+                        <div name="content-ho-so-ca-nhan">
+                            <div>
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div>
+                                Hoàng
+                            </div>
+                        </div>
+                        <div name="content-tim-kiem" style="display: none">
+                        </div>
+                    </div>
+                </div>
+                <div class="tim-kiem" onclick="OpenSearchContent();">
+                    <input type="text" class="hasicon" placeholder="Tìm kiếm" /><i class="fas fa-search"></i>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+   
+    <div class="MasterBody">
+      
+        @RenderBody()
+    </div>
+    <div class="MasterFooter">
+        <div>
+            Contact
+        </div>
+        <div>
+            License Version
+        </div>
+    </div>
+
+
+</body>
+</html>
+
