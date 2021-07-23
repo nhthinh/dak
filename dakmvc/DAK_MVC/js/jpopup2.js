@@ -82,7 +82,7 @@ function HideProcessing() {
 var popup, bgpopup;
 function ShowPopup(tilte, content, option) {
     ClosePopup();
-    var str = '<div class="clsPopupPannel"><div class="popup-logo"><img src="image/logo.png" /></div><h2 class="clsClosePopup"><i class="fas fa-window-close"></i></h2>';
+    var str = '<div class="clsPopupPannel"><div class="popup-logo"><img src="images/logo.png" /></div><h2 class="clsClosePopup"><i class="fas fa-window-close"></i></h2>';
     if (tilte != '')
         str += '<h1 class="lblColor clsTitlePopup">' + tilte + '</h1>';
     str += '<div><table class="clsPopupContentDefault">';
@@ -197,7 +197,7 @@ function ShowBackgroundPopup() {
 var popup2, bgpopup2;
 function ShowPopup2(tilte, content, option) {
     ClosePopup2();
-    var str = '<div class="clsPopupPannel2"><div class="popup-logo"><img src="image/logo.png" /></div><h2 class="clsClosePopup2"><i class="fas fa-window-close"></i></h2>';
+    var str = '<div class="clsPopupPannel2"><div class="popup-logo"><img src="images/logo.png" /></div><h2 class="clsClosePopup2"><i class="fas fa-window-close"></i></h2>';
     if (tilte != '')
         str += '<h1 class="lblColor clsTitlePopup2">' + tilte + '</h1>';
     str += '<div><table class="clsPopupContentDefault">';

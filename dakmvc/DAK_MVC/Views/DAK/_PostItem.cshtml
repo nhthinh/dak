@@ -1,0 +1,158 @@
+﻿<!--begin Item-->
+@using DAK_MVC.Models;
+@{
+
+    Post post = ViewData["_PostItem"] as Post;
+   
+}
+<div>
+    <div>
+        <div>
+            <div>
+                <div class="photo-info-summary">
+                    <img src="@post.Img_main" class="nha" />
+                    <span class="trai-tim">@post.Like_UI <i class="far fa-heart "></i></span><span class="hinh-anh">
+                        1/10 <i class="far fa-image"></i>
+                    </span><span class="gia-tien">@post.Price_UI</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
+                        <i class="fas fa-long-arrow-alt-left"></i>
+                    </span>
+                    <div class="tien-ich">
+                        <div class="item-info-1">
+                            <div>
+                                <div>
+                                    <span><i class="fas fa-bed"></i>2 </span><span>
+                                        <span class="vach-ngan">|</span> <i class="fas fa-toilet"></i>2
+                                    </span><span>
+                                        <span class="vach-ngan">|</span> <i class="fas fa-ruler-combined">
+                                        </i>@post.Square_UI
+                                    </span>
+                                </div>
+                                <div>
+                                    <span><i class="fas fa-book-open"></i></span><span>
+                                        <span class="vach-ngan">|</span><i class="fas fa-car"></i><span class="item-info-text" style="display: none">5m</span>
+                                        <span>
+                                            <span class="vach-ngan">|</span><i style="font-size: 14pt" class="fas fa-caret-down"
+                                                                               onclick="OpendViewMoreInfoItem(this);"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div style="display: none">
+                                    <div class="mui-ten-xem-chi-tiet" onclick="OpendViewMoreInfoItem(this);">
+                                        <i class="fas fa-caret-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-view-more-info">
+                        <div class="list-item-more-info">
+                            <div>
+                                <div>
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div>
+                                    Giá
+                                </div>
+                                <div>
+                                   @post.Price_UI
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <div>
+                                    Phòng Ngủ
+                                </div>
+                                <div>
+                                   @post.BedRoom_UI
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-toilet"></i>
+                                </div>
+                                <div>
+                                    Nhà Vệ Sinh
+                                </div>
+                                <div>
+                                   @post.Toilet_UI
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-ruler-combined"></i>
+                                </div>
+                                <div>
+                                    Diện Tích
+                                </div>
+                                <div>
+                                    @post.Spuare_UI_Detail
+                                   
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div>
+                                    Pháp Lý
+                                </div>
+                                <div>
+                                   @post.Legal
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <div>
+                                    Ngân Hàng
+                                </div>
+                                <div>
+                                    @post.Bank
+                                </div>
+                            </div>
+                            <div style="display: none">
+                                <div>
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div>
+                                    Nhà Hẻm
+                                </div>
+                                <div>
+                                    Hẻm Xe Hơi <span class="kich-thuot">(5 mét)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <div class="link-detail-more">
+                            Xem Chi Tiết
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="dia-chi">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                      @post.Address_UI
+                    </div>
+                </div>
+            </div>
+            <div class="item-info-3">
+                <div class="ten-nguoi-dung">
+                    <i class="far fa-user"></i>@post.Author
+                </div>
+                <div class="date-time">
+                  @post.PostedDayAgo
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end Item-->

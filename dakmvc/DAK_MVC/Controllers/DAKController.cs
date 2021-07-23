@@ -10,10 +10,10 @@ namespace DAK_MVC.Controllers
     public class DAKController : Controller
     {
         // GET: DAK
-        public ActionResult homepage()
+        public ActionResult homepage(DAKSearchInput input)
         {
             // 
-            List<Post> lstPosts = new List<Post>() {  new Post(1), new Post(2), new Post(3)};
+            List<Post> lstPosts = new List<Post>();
             ViewBag.Message = lstPosts;
             return View("homepage");
         }
@@ -27,6 +27,13 @@ namespace DAK_MVC.Controllers
         }
         public ActionResult searchreturn()
         {
+            // 
+            List<Post> lstPosts = new List<Post>();
+            for (int i = 0; i < 20; i++)
+            {
+                lstPosts.Add(new Post());
+            }
+            ViewBag.Message = lstPosts;
             return View("searchreturn");
         }
         public ActionResult alert()
