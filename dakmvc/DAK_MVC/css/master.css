@@ -87,3 +87,18 @@
 {
     padding:80px 0
     }
+.back-to-top {
+    display:none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  
+    background-color: #14417e;
+    padding: 10px;
+    color: #fff;
+    border-radius: 100%;
+    cursor:pointer
+}
+    .back-to-top:hover {
+        background-color: #8baad4;
+    }

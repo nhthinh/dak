@@ -59,17 +59,19 @@
 
     /*Search Post*/
     /****************************************/
-    .FilterSearch > div > div
-    {
+    .MenuFilter .open-close-fiter {
+    display:none
+    }
+    .FilterSearch > div > div {
         display: block;
+    }
+    .FilterSearch .filter-button {
+       left:0
     }
     .FilterSearch .filter-item
     {
         max-width: 100%;
-    }
-
-    .FilterSearch .filter-item
-    {
+   margin-top:45px;
         padding: 10px 0;
     }
     .list-grid-view > div > div
@@ -80,12 +82,11 @@
     {
         margin-right: 25px;
     }
-    .MenuFilter .menu-filter-content-quan-huyen > div
-    {
+    .MenuFilter .block-default > div {
         width: 49%;
     }
-    .dashboard-search
-    {
+   
+    .dashboard-search {
         position: inherit;
     }
     .list-grid-view

@@ -53,8 +53,7 @@
     color: #14417e;
     font-size: 15px;
 }
-.filter-button
-{
+.FilterSearch  .filter-button {
     position: absolute;
     right: 0;
     top: 10px;
@@ -64,10 +63,15 @@
     background-color: #14417e;
     font-weight: 500;
     color: #fff;
+    position:relative
 }
-
-.MenuFilter > div > div
-{
+    .MenuFilter .open-close-fiter {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 99;
+    }
+.MenuFilter > div > div {
     padding: 10px 0;
 }
 .MenuFilter .menu-filter-title > div:hover, .MenuFilter .menu-filter-title > div.active
@@ -94,21 +98,12 @@
 {
     display: block;
 }
-.menu-filter-content-loai-bds .block-default > div {
-    width: 25%;
-}
-.MenuFilter .menu-filter-content-quan-huyen {
-}
-.MenuFilter .menu-filter-content-quan-huyen > div > div
-{
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    padding: 5px 0;
-}
-    .MenuFilter .menu-filter-content-tinh-tp > div > div {
-        width: 25%;
+    .MenuFilter .block-default > div {
+        width: 33%;
+        padding: 5px 0;
     }
+
+    
 .menu-filter-content-nang-cao > div > div:not(:last-child) {
     padding-bottom: 20px;
 }

@@ -34,13 +34,17 @@ function CloseViewMoreInfoItem(obj) {
 
 function CloseMenuFilter(button) {   
     //$(button).find('i').toggleClass('fa-caret-up fa-caret-down');
-    if ($(button).find('i').attr('class').indexOf('fa-caret-up') >= 0) {
-        $(button).html('<i class="fas fa-caret-down"></i> Mở');
-        $('.MenuFilter').css({ 'height': '5px', 'overflow': 'hidden' });
+    if ($(button).attr('action') === 'open') {
+        $(button).attr('action', 'close');
+        $(button).html('<i class="fas fa-filter"></i> Mở');
+        $('.MenuFilter').css({ 'height': '41px', 'overflow': 'hidden' });
+        $('.MenuFilter > .max-width-content').hide();
     }
     else {
-        $(button).html('<i class="fas fa-caret-up"></i> Đóng');
+        $(button).attr('action', 'open');
+        $(button).html('<i class="fas fa-filter"></i> Thu');
         $('.MenuFilter').css({ 'height': '', 'overflow': '' });
+        $('.MenuFilter > .max-width-content').show();
     }
 
 }
