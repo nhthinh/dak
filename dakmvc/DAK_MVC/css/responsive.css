@@ -239,6 +239,28 @@
             width:auto;
             height:auto
             }
+
+/*trang chu*/
+    .quick-filter-form > div{
+    width:inherit
+    }
+    .quick-filter-more-option > div > div {
+    min-width:100px
+    }
+    .quick-filter-loai-bds > div {
+    width:110px
+    }
+    .quick-filter-more-option > div > div select {
+        min-width: 110px
+    }
+
+    .story-form {
+        margin-bottom: 0
+    }
+
+    .quick-filter-loai-bds > div:not(:last-child) { 
+        padding-bottom: 10px
+    }
 }
 
 .lien-he-nguoi-dang > div > div
@@ -249,3 +271,4 @@
 {
     min-width:inherit
     }
+

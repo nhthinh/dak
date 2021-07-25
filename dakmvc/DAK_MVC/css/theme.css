@@ -967,15 +967,35 @@ background-color: rgb(141 136 136 / 68%);
 /*trang Chu*/
 /*****************************************************************************************/
 .quick-filter-form {
+    margin-bottom: 20px;
+}
+.quick-filter-form > div {
     background-color: #fff;
     margin: 0 auto;
-    width: 700px;
-    padding: 20px;
-    margin-bottom:20px
+    width: 606px;
+    /* padding: 20px; */
+   
+    box-shadow: 4px 4px 10px 0px #d5d5d5;
 }
-
-    .quick-filter-form > div {
-        padding: 10px
+    .quick-filter-form > div > div:nth-child(1) {
+        background-color: #14417e;
+        color: #fff;
+        padding-bottom: 0
+    }
+    .quick-filter-form > div > div:nth-child(2) {
+        background-color: #14417e;
+    }
+    .quick-filter-form > div > div:nth-child(3) {
+        /*background-color: #afafaf;*/
+        /*color: #fff;*/
+        padding-bottom:0
+    }
+    .quick-filter-form > div > div:nth-child(4) {
+        /*background-color: #9f9f9f;*/
+        /*color: #fff;*/
+    }
+    .quick-filter-form > div > div {
+        padding: 20px;
     }
 
 .story-form {
@@ -983,6 +1003,11 @@ background-color: rgb(141 136 136 / 68%);
     margin-bottom: 20px;
     padding:5px
 }
+    .story-form > div {
+        overflow: auto;
+        overflow-y:hidden;
+        white-space: nowrap;
+    }
 
     .story-form > div > div {
         display: inline-block;
@@ -1001,7 +1026,7 @@ background-color: rgb(141 136 136 / 68%);
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 10px
+            border-radius: 5px
         }
 
     .story-form .story-account {
@@ -1017,6 +1042,7 @@ background-color: rgb(141 136 136 / 68%);
         }
 
 .quick-filter-mua-thue {
+   
 }
 
     .quick-filter-mua-thue > div {
@@ -1028,23 +1054,45 @@ background-color: rgb(141 136 136 / 68%);
 }
 
     .quick-filter-loai-bds > div {
-        display: inline-block;
-        padding-right: 30px
+        display: inline-block;      
+    }
+    .quick-filter-loai-bds > div:not(:last-child) {      
+        padding-right: 30px;        
     }
 
-.quick-filter-more-option > div {
-    display: inline-block;
-    margin-right:20px
+.quick-filter-more-option > div{
+    display: inline-block;   
+}
+.quick-filter-more-option > div:not(:last-child) {  
+    margin-right: 20px
 }
 
     .quick-filter-more-option > div > div {
         padding: 5px;
-        display:inline-block
+        display:inline-block;       
+    }
+    .quick-filter-more-option > div > div select{
+        min-width:90px
     }
 
 .quick-filter-tim-kiem input[type=text] {
-    width: calc(100% - 150px);
+    width: calc(100% - 15px);
     /* margin-right: 20px; */
     height: 40px;
     border-radius: 0;
+}
+.your-suggest {
+    font-size:14pt;
+    font-weight:bold;
+    padding:20px
+}
+.quick-filter-tim-kiem > div{
+    position:relative
+}
+.quick-filter-tim-kiem .button-light {
+    position: absolute;
+    right: 2px;
+    border: 0;
+    /* height: 40px; */
+    top: 1px;
 }
