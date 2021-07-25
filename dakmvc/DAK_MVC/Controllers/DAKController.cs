@@ -12,9 +12,14 @@ namespace DAK_MVC.Controllers
         // GET: DAK
         public ActionResult homepage(DAKSearchInput input)
         {
-            // 
+            
             List<Post> lstPosts = new List<Post>();
+            for (int i = 0; i < 20; i++)
+            {
+                lstPosts.Add(new Post());
+            }
             ViewBag.Message = lstPosts;
+           
             return View("homepage");
         }
         public ActionResult addpost()

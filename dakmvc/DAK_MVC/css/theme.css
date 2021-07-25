@@ -94,18 +94,22 @@
 {
     display: block;
 }
-.MenuFilter .menu-filter-content-quan-huyen
-{
+.menu-filter-content-loai-bds .block-default > div {
+    width: 25%;
 }
-.MenuFilter .menu-filter-content-quan-huyen > div
+.MenuFilter .menu-filter-content-quan-huyen {
+}
+.MenuFilter .menu-filter-content-quan-huyen > div > div
 {
     display: inline-block;
     width: 25%;
     vertical-align: top;
     padding: 5px 0;
 }
-.menu-filter-content-nang-cao > div > div:not(:last-child)
-{
+    .MenuFilter .menu-filter-content-tinh-tp > div > div {
+        width: 25%;
+    }
+.menu-filter-content-nang-cao > div > div:not(:last-child) {
     padding-bottom: 20px;
 }
 .menu-filter-content-nang-cao > div > div > div > div
@@ -958,3 +962,89 @@
 background-color: rgb(141 136 136 / 68%);   
     backdrop-filter: blur(60px);
         }
+
+
+/*trang Chu*/
+/*****************************************************************************************/
+.quick-filter-form {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 700px;
+    padding: 20px;
+    margin-bottom:20px
+}
+
+    .quick-filter-form > div {
+        padding: 10px
+    }
+
+.story-form {
+    background-color: #eee;
+    margin-bottom: 20px;
+    padding:5px
+}
+
+    .story-form > div > div {
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        font-size:9pt
+    }
+
+    .story-form .story-img {
+        width: 100px;
+        height: 150px;
+        border-radius:5px
+    }
+
+        .story-form .story-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px
+        }
+
+    .story-form .story-account {
+        position: absolute;
+        bottom: 5px;
+        color: #fff;
+        padding: 3px
+    }
+
+        .story-form .story-account > div {
+            display: inline-block;
+            font-size:8pt
+        }
+
+.quick-filter-mua-thue {
+}
+
+    .quick-filter-mua-thue > div {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+.quick-filter-loai-bds {
+}
+
+    .quick-filter-loai-bds > div {
+        display: inline-block;
+        padding-right: 30px
+    }
+
+.quick-filter-more-option > div {
+    display: inline-block;
+    margin-right:20px
+}
+
+    .quick-filter-more-option > div > div {
+        padding: 5px;
+        display:inline-block
+    }
+
+.quick-filter-tim-kiem input[type=text] {
+    width: calc(100% - 150px);
+    /* margin-right: 20px; */
+    height: 40px;
+    border-radius: 0;
+}

@@ -274,3 +274,7 @@ input[type=button].button-dark,div.button-dark
        border-bottom: 1px solid #eee;
        padding:5px 0
         }
+
+div.block-default > div{
+display:inline-block
+}
