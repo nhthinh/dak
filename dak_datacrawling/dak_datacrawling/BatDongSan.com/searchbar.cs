@@ -18,7 +18,7 @@ namespace dak_datacrawling
             }
         }
 
-        public void FillSearchInput(string ban_chothue, string loai_nha_dat, string khu_vuc, string muc_gia, string dien_tich, string du_an = "")
+        public void FillSearchInput(string ban_chothue, string loai_nha_dat, string[] arr_xapth_khu_vuc, string muc_gia, string dien_tich, string du_an = "")
         {
             // fill ban_or che thue
             IWebElement eBan_chothue = base.GetFirstChildByClass(SearchBar, "search-bar-tab");
@@ -30,7 +30,7 @@ namespace dak_datacrawling
             // loai nha dat
 
             ClickOn(base.GetFirstChildByClass(SearchBar, "select-cate"),"Chon loai nha dat");
-            Thread.Sleep(10000);
+           //Thread.Sleep(10000);
 
             List<IWebElement> list_loai_nha_dat = base.GetIWebElementByID("mCSB_3").FindElement(By.Id("divCate")).FindElement(By.TagName("ul")).FindElements(By.TagName("li")).ToList();
             bool isFound = false;
@@ -50,6 +50,7 @@ namespace dak_datacrawling
                         List<IWebElement> lst = ul.FindElements(By.TagName("li")).ToList();
                         foreach (var ii in lst)
                         {
+                            base.MoveToElement(ii);
                              text = ii.FindElement(By.TagName("span")).Text;
                             if (text.ToLower() == loai_nha_dat.ToLower())
                             {
@@ -68,7 +69,19 @@ namespace dak_datacrawling
 
             Thread.Sleep(1000);
             // chon khu vuc
-        //    ClickOn(base.GetFirstChildByClass(SearchBar, "city-control"), "Chon khu vuc");
+            ClickOn(base.GetFirstChildByClass(SearchBar, "city-control"), "Chon khu vuc");
+
+            List<IWebElement> liostTintthanh =  base.GetIWebElementByID("mCSB_3").FindElement(By.Id("divCate")).FindElement(By.TagName("ul")).FindElements(By.TagName("li")).ToList();
+
+
+
+            foreach (var item in arr_xapth_khu_vuc)
+            {
+                base.MoveToElement(By.XPath(item));
+                ClickOn(By.XPath(item),"Chon khu vuc item");
+            }
+
+          
 
            // Thread.Sleep(1000);
             // chon muc gia
