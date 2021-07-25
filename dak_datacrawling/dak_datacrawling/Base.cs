@@ -1,10 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -72,6 +74,32 @@ namespace dak_datacrawling
             }
             catch { }
 
+        }
+        string PathImageDownload = System.Configuration.ConfigurationManager.AppSettings["PathImageDownload"] ?? "./downloaded_images";
+        internal void DownloadImage(string url, string name)
+        {
+            WebClient cl = new WebClient();
+            cl.DownloadFile(url, PathImageDownload + "\\" + name);
+        }
+
+        internal void MoveToElement(IWebElement element)
+        {
+           
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(element);
+            actions.Perform();
+        }
+        internal void MoveToElement(By by)
+        {
+
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(GetIWebElementByby(by));
+            actions.Perform();
+        }
+
+        public IWebElement GetIWebElementByby(By by)
+        {
+            return driver.FindElement(by);
         }
 
         internal IWebElement GetFirstChildByTagName_AcceptNull(IWebElement ele, string v)
