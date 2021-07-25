@@ -967,23 +967,23 @@ background-color: rgb(141 136 136 / 68%);
 .quick-filter-form > div {
     background-color: #fff;
     margin: 0 auto;
-    width: 606px;
+    width: 806px;
     /* padding: 20px; */
    
     box-shadow: 4px 4px 10px 0px #d5d5d5;
 }
     .quick-filter-form > div > div:nth-child(1) {
-        background-color: #14417e;
-        color: #fff;
-        padding-bottom: 0
+        /*background-color: #14417e;*/
+        /*color: #fff;*/      
     }
     .quick-filter-form > div > div:nth-child(2) {
-        background-color: #14417e;
+        /*background-color: #14417e;*/
+        padding-top: 0
     }
     .quick-filter-form > div > div:nth-child(3) {
         /*background-color: #afafaf;*/
         /*color: #fff;*/
-        padding-bottom:0
+       
     }
     .quick-filter-form > div > div:nth-child(4) {
         /*background-color: #9f9f9f;*/
@@ -1066,6 +1066,15 @@ background-color: rgb(141 136 136 / 68%);
         padding: 5px;
         display:inline-block;       
     }
+        .quick-filter-more-option > div > div:nth-child(1) {
+            border: 1px solid #006aff;
+            border-radius: 5px;
+            color: #006aff;
+            padding: 10px 20px;
+        }
+    .quick-filter-more-option > div > div:nth-child(2) {
+        display:none
+    }
     .quick-filter-more-option > div > div select{
         min-width:90px
     }
@@ -1073,8 +1082,9 @@ background-color: rgb(141 136 136 / 68%);
 .quick-filter-tim-kiem input[type=text] {
     width: calc(100% - 15px);
     /* margin-right: 20px; */
-    height: 40px;
-    border-radius: 0;
+    height: 70px;
+    /* border-radius: 0; */
+    font-size: 12pt;
 }
 .your-suggest {
     font-size:14pt;
@@ -1089,5 +1099,5 @@ background-color: rgb(141 136 136 / 68%);
     right: 2px;
     border: 0;
     /* height: 40px; */
-    top: 1px;
+    top: 22px;
 }

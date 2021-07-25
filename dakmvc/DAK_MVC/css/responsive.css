@@ -43,12 +43,12 @@
         font-size: 17pt;
         margin-bottom: 6px;
     }
-
-    /*default.css*/
-    /*****************************************************************************************/
-
-
-    .max-width-content
+    .back-to-top {
+    bottom:77px
+    }
+        /*default.css*/
+        /*****************************************************************************************/
+        .max-width-content
     {
         padding: 0 10px;
     }
@@ -245,8 +245,15 @@
     .quick-filter-form > div{
     width:inherit
     }
+    .quick-filter-more-option {
+    /*text-align:center;*/
+    }
+        .quick-filter-more-option > div {
+            padding: 10px;
+            margin-right: 0 !important;
+        }
     .quick-filter-more-option > div > div {
-    min-width:100px
+        min-width: 100px
     }
     .quick-filter-loai-bds > div {
     width:110px

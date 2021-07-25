@@ -5,7 +5,101 @@
 @using DAK_MVC.Models;
 
 <div name="content-tim-kiem">
-    <div class="MenuFilter">
+    <div>
+        <div class="quick-filter-more-option">
+            <div>
+                <div>Loại BĐS</div>
+                <div>
+                    <select>
+                        <option label="- Chọn -"></option>
+                        <option>Nhà riêng</option>
+                        <option>
+                            Đất nền
+                        </option>
+
+                        <option>
+                            Căn hộ
+                        </option>
+                        <option>
+                            Dự án
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>Khoảng giá</div>
+                <div>
+                    <select>
+                        <option label="- Chọn -"></option>
+                        <option><= 1 tỷ</option>
+                        <option>
+                            1 - 2 tỷ
+                        </option>
+
+                        <option>
+                            2 - 3 tỷ
+                        </option>
+                        <option>
+                            3 - 5 tỷ
+                        </option>
+                        <option>
+                            7 - 10 tỷ
+                        </option>
+                        <option>
+                            10 - 20 tỷ
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>Diện tích</div>
+                <div>
+                    <select>
+                        <option label="- Chọn -"></option>
+                        <option>
+                            < 30 m²
+                        </option>
+                        <option>
+                            30 - 50 m²
+                        </option>
+                        <option>
+                            50 - 70 m²
+                        </option>
+                        <option>
+                            70 - 100 m²
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>Hướng</div>
+                <div>
+                    <select>
+                        <option label="- Chọn -"></option>
+                        <option>
+                            Đông
+                        </option>
+                        <option>
+                            Tây
+                        </option>
+                        <option>
+                            Nam
+                        </option>
+                        <option>
+                            Bắc
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>Nâng cao</div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="MenuFilter" style="display:none">
         <div class="max-width-content">
             <div>
                 <div class="menu-filter-title">
@@ -257,7 +351,7 @@
                     </div>
                     <div class="button-light">
                         <i class="fas fa-save"></i>Lưu tìm kiếm
-                    </div>                   
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,8 +377,8 @@
                     @foreach (var Post in lstPosts)
                     {
                         @Post.name
-                        @Html.Partial("_PostItem", new ViewDataDictionary(ViewData) { { "_PostItem", Post} })
-                      
+                        @Html.Partial("_PostItem", new ViewDataDictionary(ViewData) { { "_PostItem", Post } })
+
 
 
                     }
