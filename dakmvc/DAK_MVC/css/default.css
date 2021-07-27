@@ -242,7 +242,11 @@ input[type=button], .button-light, .button-dark {
         background: #14417e;
     }
 
-
+    /*form default*/
+/*****************************************************************************************/
+.div-list-defaut > div {
+    padding: 5px 0
+}
 .div-row > div {
     display: inline-block;
     vertical-align: middle
@@ -261,3 +265,62 @@ input[type=button], .button-light, .button-dark {
 div.block-default > div {
     display: inline-block
 }
+
+
+/*dak-tooltip*/
+/*****************************************************************************************/
+.dak-tooltip {
+    position: relative
+}
+.dak-tooltip .tt-button {
+    border: 1px solid #006aff;
+    border-radius: 5px;
+    color: #006aff;
+    padding: 10px 20px;
+    user-select: none
+}
+    .dak-tooltip:not(.tt-active):hover .tt-button {
+        background-color: #eee;
+        cursor: pointer
+    }
+
+
+    .dak-tooltip.tt-active .tt-button {
+        color: #ffffff !important;
+        background-color: #006aff;
+    }
+    .dak-tooltip .tt-form {
+        min-width: 200px;
+        display: none;
+        position: absolute;
+        z-index: 9;
+        left: 0
+    }
+    .dak-tooltip .tt-arrow {
+        z-index: 1;
+        color: #fff;
+        left: 50px;
+        position: absolute;
+        top: -9px;
+    }
+    .dak-tooltip .tt-body {
+        background-color: #fff;
+        box-shadow: 1px -1px 6px 1px #d2d2d2;       
+        color: #000;
+    }
+    .dak-tooltip .tt-header {   
+        padding: 10px
+    }
+    .dak-tooltip .tt-content {
+        padding: 10px
+    }
+    .dak-tooltip .tt-footer {
+        background-color: #006aff;
+        padding: 5px;
+        text-align: right;
+    }
+    .dak-tooltip .tt-footer input[type=button]{
+        line-height: 1;
+        /* padding: 5px; */
+        font-size: 10pt;
+    }

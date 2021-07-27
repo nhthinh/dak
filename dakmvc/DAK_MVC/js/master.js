@@ -2,6 +2,7 @@
    // ClickMenuMaster();
 
     HideShowMenuBarMaster();
+    Body_Tooltip_click();
 });
 function ClickMenuMaster() {
     $('.MasterBody > div').hide();
@@ -44,9 +45,9 @@ function getBaseURL() {
     var baseURL = url.substring(0, url.indexOf('/', 14));
 
 
-    if (baseURL.indexOf('http://localhost') != -1) {
+    if (baseURL.indexOf('http://localhost') !== -1) {
         // Base Url for localhost
-        var url = location.href;  // window.location.href;
+        url = location.href;  // window.location.href;
         var pathname = location.pathname;  // window.location.pathname;
         var index1 = url.indexOf(pathname);
         var index2 = url.indexOf("/", index1 + 1);
@@ -70,3 +71,29 @@ $(window).scroll(function () {
         $('.back-to-top').fadeOut();
     }
 });
+
+function ShowTooltip(obj) {
+    HideTooltip();
+    $(obj).closest('.dak-tooltip').addClass('tt-active');
+    $(obj).closest('.dak-tooltip').find('.tt-form').show();  
+}
+function HideTooltip() {    
+    if ($('.tt-active').length > 0) {
+        $('.tt-active').find('.tt-form').hide();
+        $('.tt-active').removeClass('tt-active');
+    }
+}
+function Body_Tooltip_click() {
+    $(document).click(function () {
+        HideTooltip();
+    });
+
+    $('.dak-tooltip .tt-button').click(function (event) {        
+        ShowTooltip(this);
+        event.stopPropagation();
+    });
+    $('.dak-tooltip .tt-close-button').click(function (event) {
+        HideTooltip();
+        event.stopPropagation();
+    });   
+}

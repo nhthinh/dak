@@ -1062,20 +1062,9 @@ background-color: rgb(141 136 136 / 68%);
     margin-right: 20px
 }
 
-    .quick-filter-more-option > div > div {
-        padding: 5px;
-        display:inline-block;       
-    }
-        .quick-filter-more-option > div > div:nth-child(1) {
-            border: 1px solid #006aff;
-            border-radius: 5px;
-            color: #006aff;
-            padding: 10px 20px;
-        }
-    .quick-filter-more-option > div > div:nth-child(2) {
-        display:none
-    }
-    .quick-filter-more-option > div > div select{
+   
+       
+        .quick-filter-more-option > div > div select{
         min-width:90px
     }
 
@@ -1101,3 +1090,13 @@ background-color: rgb(141 136 136 / 68%);
     /* height: 40px; */
     top: 22px;
 }
+.form-input-price table tr td {
+    padding: 5px
+}
+.form-input-price .select-price > div {
+    padding: 5px 0
+}
+    .form-input-price .select-price > div:hover {
+        text-decoration: underline;
+        cursor:pointer
+    }
