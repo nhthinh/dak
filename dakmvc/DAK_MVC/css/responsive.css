@@ -277,6 +277,14 @@
     .dak-tooltip .tt-body {
     margin-top:0
     }
+
+    .why-choose-us-form > div > div {
+    display:block;
+    width:100%
+    }
+
+
+
 }
 .lien-he-nguoi-dang > div > div {
     width: 100%;

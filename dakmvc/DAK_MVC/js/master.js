@@ -84,8 +84,10 @@ function HideTooltip() {
     }
 }
 function Body_Tooltip_click() {
-    $(document).click(function () {
-        HideTooltip();
+    $(document).click(function (e) {
+        if ($(e.target).closest('.dak-tooltip').length === 0) {
+            HideTooltip();
+        }        
     });
 
     $('.dak-tooltip .tt-button').click(function (event) {        
