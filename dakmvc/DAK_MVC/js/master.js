@@ -99,3 +99,10 @@ function Body_Tooltip_click() {
         event.stopPropagation();
     });   
 }
+function IsMobile() {
+    if ($(window).height() > $(window).width()) {
+        return true;
+    }
+    else
+        return false;
+}

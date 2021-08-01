@@ -10,7 +10,7 @@
         <div>
             <div>
                 <div class="photo-info-summary">
-                    <img src="@post.Img_main" class="nha" />
+                    <img src="@post.Img_main" class="nha" onclick="OpenDetail()"/>
                     <span class="trai-tim">@post.Like_UI <i class="far fa-heart "></i></span><span class="hinh-anh">
                         1/10 <i class="far fa-image"></i>
                     </span><span class="gia-tien">@post.Price_UI</span> <span class="mui-ten-phai"><i class="fas fa-long-arrow-alt-right"></i></span><span class="mui-ten-trai">
@@ -128,7 +128,7 @@
                         <div class="close-view-more-info" onclick="CloseViewMoreInfoItem(this);">
                             <i class="fas fa-times-circle"></i>
                         </div>
-                        <div class="link-detail-more">
+                        <div class="link-detail-more" onclick="OpenDetail()">
                             Xem Chi Tiết
                         </div>
                     </div>

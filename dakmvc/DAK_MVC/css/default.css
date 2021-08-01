@@ -272,13 +272,13 @@ div.block-default > div {
 .dak-tooltip {
     position: relative
 }
-.dak-tooltip .tt-button {
-    border: 1px solid #006aff;
-    border-radius: 5px;
-    color: #006aff;
-    padding: 10px 20px;
-    user-select: none
-}
+    .dak-tooltip .tt-button {
+        border: 1px solid #14417e;
+        border-radius: 5px;
+        color: #14417e;
+        padding: 10px 20px;
+        user-select: none
+    }
     .dak-tooltip:not(.tt-active):hover .tt-button {
         background-color: #eee;
         cursor: pointer
@@ -287,7 +287,7 @@ div.block-default > div {
 
     .dak-tooltip.tt-active .tt-button {
         color: #ffffff !important;
-        background-color: #006aff;
+        background-color: #14417e;
     }
     .dak-tooltip .tt-form {
         min-width: 200px;
@@ -315,7 +315,7 @@ div.block-default > div {
         padding: 10px
     }
     .dak-tooltip .tt-footer {
-        background-color: #006aff;
+        background-color: #14417e;
         padding: 5px;
         text-align: right;
     }
@@ -324,3 +324,13 @@ div.block-default > div {
         /* padding: 5px; */
         font-size: 10pt;
     }
+.table-input-form {
+
+}
+.table-input-form td {
+    padding: 5px;
+    white-space: nowrap
+}
+    .table-input-form td input, .table-input-form td select {
+    width:100%
+}
