@@ -961,11 +961,18 @@ background-color: rgb(141 136 136 / 68%);
 
 /*trang Chu*/
 /*****************************************************************************************/
+.home-page-bg-1 {
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100px; */
+    padding: 146px 0;
+}
 .quick-filter-form {
     margin-bottom: 20px;
 }
     .quick-filter-form > div {
-        background-color: #fff;
+        background-color: rgb(255 255 255 / 93%);
         margin: 0 auto;
         width: 806px;
         /* padding: 20px; */

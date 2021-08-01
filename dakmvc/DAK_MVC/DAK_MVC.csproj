@@ -139,6 +139,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="images\aaaaa.png" />
+    <Content Include="images\bg1.jpg" />
     <Content Include="images\footer.PNG" />
     <Content Include="images\house.png" />
     <Content Include="images\logo.png" />
