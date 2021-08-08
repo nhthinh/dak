@@ -22,7 +22,7 @@ namespace dak_datacrawling
             driver.Url = baseURL;
             driver.Manage().Window.Maximize();
             // a@@b->startwith=a and endwith=b
-        
+
             FillSearchInput("Bán", "Bán Đất", new string[] { "/html/body/form/div/div[6]/div[2]/div[2]/div/div[1]/ul/li[2]", "/html/body/form/div/div[6]/div[2]/div[2]/div/div[1]/ul/li[1]" }, "500@@800 triệu", "50 m²@@80 m²");
             ClickOn(By.Id("btnSearch"), "btnSearch");
             base.WaitForElementPresent(By.ClassName("product-lists-count"));
@@ -43,7 +43,7 @@ namespace dak_datacrawling
                 post.Address_UI = maindiv.FindElement(By.ClassName("location")).Text;
                 //lstposts.Add(post);
 
-            string sqsl= @"INSERT INTO [dbo].[dak_Post]
+                string sqsl = @"INSERT INTO [dbo].[dak_Post]
            (         
            ,[Address]
          
@@ -62,10 +62,11 @@ namespace dak_datacrawling
            ,[PinkBook]
            ,[IsHost]
            ,[MainImageID]"
+                ;
+                string s = "";
             }
-            string s = "";
-        }
 
-       
+
+        }
     }
 }

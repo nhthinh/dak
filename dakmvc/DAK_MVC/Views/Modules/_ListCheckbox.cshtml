@@ -1,0 +1,15 @@
+﻿@using DAK_MVC.Models;
+@{
+    string type = Model;
+    List<City> lstCity = (new City()).LoadCity();
+}
+@foreach (var item in lstCity)
+{
+    <div>
+        <label class="checkbox-default">
+            @item.Name
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+        </label>
+    </div>
+}

@@ -49,5 +49,12 @@ namespace DAK_MVC.Controllers
         {
             return View("message");
         }
+
+        public ActionResult ListCity()
+        {
+        //    return View("_ListCheckbox");
+         //   return PartialView();
+            return PartialView("~/Views/Modules/_ListCheckbox.cshtml", "City");
+        }
     }
 }

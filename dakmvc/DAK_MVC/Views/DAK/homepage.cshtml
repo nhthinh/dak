@@ -1,7 +1,9 @@
 ﻿@using DAK_MVC.Models;
 @{
     ViewBag.Title = "homepage";
+
 }
+
 <div>
     <div class="story-form">
         <div>
@@ -64,42 +66,21 @@
                                 <div class="tt-header">Khu vực</div>
                                 <div class="tt-content">
                                     <div class="quick-filter-khu-vuc">
+                                    <div class="quick-filter-khu-vuc">
                                         <div>
                                             <table class="table-input-form">
                                                 <tr>
                                                     <td>Thành phố / Tỉnh</td>
                                                     <td>
-                                                        <div><input type="text" /></div>
-                                                        <div class="div-list-defaut list-input">
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Hồ Chí Minh
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Hà Nội
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Đà Nẵng
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Cần Thơ
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
+                                                       
+                                                        <div><input type="text" onclick="ThanhPhoFilter_Focus();" /></div>
+                                                        <div class="div-list-defaut list-input" id="divPartialThanhPhoFilter">
+                                                            
+                                                                @Html.Partial("~/Views/Modules/_ListCheckbox.cshtml","");
+                                                            
                                                         </div>
+
+
                                                     </td>
                                                 </tr>
                                                 <tr>

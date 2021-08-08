@@ -19,6 +19,11 @@ function OpenSearchContent() {
     window.location = "DAK/searchreturn";
 }
 
+function RedirectPage(target) {
+    window.location = target;
+}
+
+
 
 function HideShowMenuBarMaster() {
     var position = $('body').scrollTop();

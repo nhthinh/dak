@@ -13,18 +13,18 @@
     <link rel="icon" href="~/images/logo.png" type="~/image/icon type" />
     @Styles.Render("~/js/jquery-ui.css")
     @Styles.Render("~/css/popup2.css")
-   @Styles.Render("~/css/reset.css")
-   @Styles.Render("~/css/default.css")
-   @Styles.Render("~/css/master.css")
-   @Styles.Render("~/css/theme.css")
-   @Styles.Render("~/css/responsive.css")
+    @Styles.Render("~/css/reset.css")
+    @Styles.Render("~/css/default.css")
+    @Styles.Render("~/css/master.css")
+    @Styles.Render("~/css/theme.css")
+    @Styles.Render("~/css/responsive.css")
     @Scripts.Render("~/js/jquery-ui.min.js")
     @Scripts.Render("~/js/master.js")
     @Scripts.Render("~/js/addpost.js")
     @Scripts.Render("~/js/search.js")
     @Scripts.Render("~/js/Common.js")
     @Scripts.Render("~/js/jpopup2.js")
-
+    @Scripts.Render("~/js/quickfilter.js")
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
           rel="stylesheet" />
@@ -37,17 +37,17 @@
     <div class="MasterHeader">
         <div class="max-width-content">
             <div>
-                <div class="logo">
+                <div class="logo" onclick="RedirectPage('/DAK')">
                     <img src="~/images/logo.png" />
                     <span>DAK</span>
                 </div>
                 <div class="menu-master">
                     <div class="menu-master-list">
-                        <div name="content-trang-chu">
+                        <div name="content-trang-chu" onclick="RedirectPage('/DAK')">
                             <div>
                                 <i class="fas fa-home"></i>
                             </div>
-                            <div>
+                            <div >
                                 Trang chủ
                             </div>
                         </div>                      
