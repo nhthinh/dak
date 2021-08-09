@@ -1141,7 +1141,8 @@
     }
 
     .quick-filter-khu-vuc .list-input {
-        
+        height:100px;
+        overflow:auto
     }
 
 .quick-filter-tim-kiem input[type=text] {
