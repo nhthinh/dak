@@ -231,7 +231,7 @@
 
     /*trang chu*/
     .quick-filter-form > div {
-        width: inherit
+        width: 95%;
     }
 
     .quick-filter-more-option {
@@ -283,6 +283,10 @@
     width:100%
     }
 
+    .quick-filter-khu-vuc {
+    padding:0;
+    width:100%
+    }
 
 
 }
