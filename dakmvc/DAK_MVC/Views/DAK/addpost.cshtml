@@ -3,201 +3,202 @@
     ViewBag.Title = "addpost";
 }
 
+<form action="/DAK/NewPost" method="post" id="formpost">
+    @Html.AntiForgeryToken()
+    <div class="add-post">
+        <div>
+            <div class="head">
+                <div class="title">
 
-<div class="add-post">
-    <div>
-        <div class="head">
-            <div class="title">
+                    Chọn danh mục
 
-                Chọn danh mục
-
-            </div>
-            <div class="add-post-step">               
-                <div class="step-slider">
-                    <div></div>
+                </div>
+                <div class="add-post-step">
+                    <div class="step-slider">
+                        <div></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="content">
-            <div>
-                <div class="add-post-loai-bds active" nametitle="Chọn danh mục">
-                    <div>
-                        <label class="radio-default">
-                            Nhà riêng
-                            <input type="radio" />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class="radio-default">
-                            Đất nền
-                            <input type="radio" />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class="radio-default">
-                            Căn hộ
-                            <input type="radio" />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class="radio-default">
-                            Dự án
-                            <input type="radio" />
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-
-                </div>
-                <div class="add-post-info-1" nametitle="Thông tin cơ bản">
-
-                    <table class="table-input-form">
-                        <tr>
-                            <td>
-                                Tên toà nhà / khu dân cư / dự án
-                            </td>
-                            <td>
-                                <input type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Chọn tỉnh thành
-                            </td>
-                            <td><select><option value="-Chọn-"></option></select></td>
-                        </tr>
-                        <tr>
-                            <td>Quận, huyện</td>
-                            <td><select><option value="-Chọn-"></option></select></td>
-                        </tr>
-                        <tr>
-                            <td>Phường, xã, thị trấn</td>
-                            <td><select><option value="-Chọn-"></option></select></td>
-                        </tr>
-                        <tr>
-                            <td>Số nhà</td>
-                            <td> <input type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>Tên đường   </td>
-                            <td> <input type="text" /></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="add-post-add-photo" nametitle="Hình ảnh và Video">
-                    <div>Chọn nhiều hình đẹp để bán chạy hơn</div>
-                    <div class="add-post-inmport-photo">
+            <div class="content">
+                <div>
+                    <div class="add-post-loai-bds active" nametitle="Chọn danh mục">
                         <div>
+                            <label class="radio-default">
+                                Nhà riêng
+                                <input type="radio" name="lcategory" data="1" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="radio-default">
+                                Đất nền
+                                <input type="radio" name="lcategory" data="2" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="radio-default">
+                                Căn hộ
+                                <input type="radio" name="lcategory" data="3" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="radio-default">
+                                Dự án
+                                <input type="radio" name="lcategory" data="4" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="add-post-info-1" nametitle="Thông tin cơ bản">
+
+                        <table class="table-input-form">
+                            <tr>
+                                <td>
+                                    Tên toà nhà / khu dân cư / dự án
+                                </td>
+                                <td>
+                                    <input type="text" id="post_projectname" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Chọn tỉnh thành
+                                </td>
+                                <td><select id="post_city"><option value="-Chọn-"></option></select></td>
+                            </tr>
+                            <tr>
+                                <td>Quận, huyện</td>
+                                <td><select id="post_district"><option value="-Chọn-"></option></select></td>
+                            </tr>
+                            <tr>
+                                <td>Phường, xã, thị trấn</td>
+                                <td><select id="post_ward"><option value="-Chọn-"></option></select></td>
+                            </tr>
+                            <tr>
+                                <td>Số nhà</td>
+                                <td> <input type="text" id="post_number" /></td>
+                            </tr>
+                            <tr>
+                                <td>Tên đường   </td>
+                                <td> <input type="text" id="post_street" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add-post-add-photo" nametitle="Hình ảnh và Video">
+                        <div>Chọn nhiều hình đẹp để bán chạy hơn</div>
+                        <div class="add-post-inmport-photo">
                             <div>
-                                <img src="~/images/house.png" />
+                                <div>
+                                    <img src="~/images/house.png" />
+                                </div>
+                                <div>
+                                    <img src="~/images/house.png" />
+                                </div>
+                                <div>
+                                    <img src="~/images/house.png" />
+                                </div>
+                                <div><i class="fas fa-camera"></i></div>
                             </div>
-                            <div>
-                                <img src="~/images/house.png" />
-                            </div>
-                            <div>
-                                <img src="~/images/house.png" />
-                            </div>
-                            <div><i class="fas fa-camera"></i></div>
                         </div>
                     </div>
-                </div>
-                <div class="add-post-info-2" nametitle="Diện tích & Giá">
+                    <div class="add-post-info-2" nametitle="Diện tích & Giá">
 
-                    <table class="table-input-form">
-                        <tr>
-                            <td>
-                                Diện tích
-                            </td>
-                            <td>
-                                <input type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Giá
-                            </td>
-                            <td>
-                                <input type="text" />
-                            </td>
-                        </tr>
+                        <table class="table-input-form">
+                            <tr>
+                                <td>
+                                    Diện tích
+                                </td>
+                                <td>
+                                    <input type="text" id="post_square" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Giá
+                                </td>
+                                <td>
+                                    <input type="text" id="post_price" />
+                                </td>
+                            </tr>
 
-                    </table>
-                </div>
-                <div class="add-post-info-3" nametitle="Thông tin cơ bản">
+                        </table>
+                    </div>
+                    <div class="add-post-info-3" nametitle="Thông tin cơ bản">
 
-                    <table class="table-input-form">
-                        <tr>
-                            <td>
-                                Số phòng ngủ
-                            </td>
-                            <td>
-                                <input type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Số phòng vệ sinh
-                            </td>
-                            <td>
-                                <input type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Hướng cửa chính
-                            </td>
-                            <td>
-                                <select><option></option></select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Hướng ban công
-                            </td>
-                            <td>
-                                <select><option></option></select>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="add-post-info-4" nametitle="Tiêu đề & Mô tả chi tiết">
+                        <table class="table-input-form">
+                            <tr>
+                                <td>
+                                    Số phòng ngủ
+                                </td>
+                                <td>
+                                    <input type="text" id="post_rooms" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Số phòng vệ sinh
+                                </td>
+                                <td>
+                                    <input type="text" id="post_toilet" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Hướng cửa chính
+                                </td>
+                                <td>
+                                    <select id="post_maindirection"><option></option></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Hướng ban công
+                                </td>
+                                <td>
+                                    <select id="post_bacoldirection"><option></option></select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add-post-info-4" nametitle="Tiêu đề & Mô tả chi tiết">
 
-                    <table class="table-input-form">
-                        <tr>
-                            <td>
-                                Tiêu đề
-                            </td>
-                            <td>
-                                <input type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Mô tả chi tiết
-                            </td>
-                            <td>
-                                <input type="text" multiple="5" />
-                            </td>
-                        </tr>
+                        <table class="table-input-form">
+                            <tr>
+                                <td>
+                                    Tiêu đề
+                                </td>
+                                <td>
+                                    <input type="text" id="post_title" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Mô tả chi tiết
+                                </td>
+                                <td>
+                                    <input type="text" multiple="5" id="post_description" />
+                                </td>
+                            </tr>
 
-                    </table>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="button">
-            <div>
+            <div class="button">
                 <div>
                     <div>
-                        <input type="button" value="Quay lại" class="button-light" onclick="addpost_back_click()" />
-                        <input type="button" value="Tiếp tục" class="button-dark" onclick="addpost_next_click()" />
-                        <input type="button" value="Xem / Đăng tin" class="button-light" onclick="addpost_view_click()" />
+                        <div>
+                            <input type="button" value="Quay lại" class="button-light" onclick="addpost_back_click()" />
+                            <input type="button" value="Tiếp tục" class="button-dark" onclick="addpost_next_click()" />
+                            <input type="button" value="Xem / Đăng tin" class="button-light" onclick="addpost_view_click()" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-
+</form>

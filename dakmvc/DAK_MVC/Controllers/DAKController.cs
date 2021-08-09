@@ -56,5 +56,14 @@ namespace DAK_MVC.Controllers
          //   return PartialView();
             return PartialView("~/Views/Modules/_ListCheckbox.cshtml", "City");
         }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public void NewPost(Post post)
+        {
+            //    return View("_ListCheckbox");
+            //   return PartialView();
+            string s =
+                  "dsfvdsd";
+        }
     }
 }

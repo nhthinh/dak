@@ -1,6 +1,29 @@
 ﻿$(document).ready(function () {
     FixHeight_Content_AddPost();
 });
+function Post() {
+    this.Type = $('.add-post-loai-bds input:checked').attr('data');
+    this.ProjectName = $('#post_projectname').text();
+    this.City = $('#post_city').val();
+    this.District = $('#post_district').val();
+    this.Ward = $('#post_ward').val();
+    this.Number = $('#post_number').text();
+    this.Street = $('#post_street').text();
+    this.Square = $('#post_square').text();
+    this.Price = $('#post_price').text();
+    this.Rooms = $('#post_rooms').text(); 
+    //
+    this.Toilets = $('#post_toilet').text(); 
+
+    //
+    this.MainDirection = $('#post_maindirection').val(); 
+    //
+    this.BacolDirection = $('#post_bacoldirection').val();
+    //
+    this.Title = $('#post_title').text();
+    //
+    this.Description = $('#post_description').text();
+}
 
 function AddPost(o) {
   

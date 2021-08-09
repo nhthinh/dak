@@ -8,19 +8,21 @@ namespace DAK_MVC.Models
     public class Post
     {
         public int ID { get; set; }
-        public string Square_UI { get; private set; }
+        public string Square_UI { get;  set; }
+        public string Square { get; set; }
         public string name { get; set; }
         public string Like_UI { get; set; }
         public string Price_UI { get; set; }
-        public string BedRoom_UI { get; private set; }
-        public string Toilet_UI { get; private set; }
-        public string Spuare_UI_Detail { get; private set; }
-        public string Legal { get; private set; }
-        public string Bank { get; private set; }
-        public string Address_UI { get; private set; }
-        public string Author { get; private set; }
-        public string PostedDayAgo { get; private set; }
-        public string Img_main { get; private set; }
+        public string Price { get; set; }
+        public string BedRoom_UI { get;  set; }
+        public string Toilet_UI { get;  set; }
+        public string Spuare_UI_Detail { get;  set; }
+        public string Legal { get;  set; }
+        public string Bank { get;  set; }
+        public string Address_UI { get;  set; }
+        public string Author { get;  set; }
+        public string PostedDayAgo { get;  set; }
+        public string Img_main { get;  set; }
 
         public Post()
         {
