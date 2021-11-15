@@ -6,7 +6,7 @@ namespace DAK_MVC.Controllers
     {
         public DAKSearchInput()
         {
-         
+            
         }
 
     }

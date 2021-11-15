@@ -12,7 +12,7 @@ namespace DAK_MVC.Models
         public string Code { get; set; }
 
 
-        public  List<City> LoadCity()
+        public static  List<City> LoadCity()
         {
             List<City> lst = new List<City>();
             DataAccess dal = new DataAccess();

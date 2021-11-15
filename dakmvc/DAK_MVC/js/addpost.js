@@ -73,3 +73,6 @@ function FixHeight_Content_AddPost() {
 function addpost_view_click() {
     OpenDetail();
 }
+function addpost_change_tinhthanh() {
+    $('#divPartialQuanHuyenFilter').load('/DAK/ListDistrict/' + $('[id$=post_city]').val());
+}

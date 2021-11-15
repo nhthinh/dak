@@ -128,6 +128,7 @@
     </Compile>
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\DataAccess.cs" />
+    <Compile Include="Models\District.cs" />
     <Compile Include="Models\Globals.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,6 +191,8 @@
     <Content Include="Views\DAK\searchreturn.cshtml" />
     <Content Include="Views\DAK\_PostItem.cshtml" />
     <Content Include="Views\Modules\_ListCheckbox.cshtml" />
+    <Content Include="Views\Modules\_DropDownbox.cshtml" />
+    <Content Include="Views\Modules\_DropDownbox2.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

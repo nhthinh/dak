@@ -63,7 +63,7 @@ namespace DAK_MVC.Models
         {
             return cmd.ExecuteScalar();
         }
-        public DataSet ExecuteDataset(string strSQL)
+        public DataSet ExecuteDataset(string strSQL, SqlParameter[] para = null, CommandType cmdType = CommandType.Text)
         {
             try
             {
@@ -71,7 +71,13 @@ namespace DAK_MVC.Models
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSQL, cn);
-                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandType = cmdType;
+                    cmd.Parameters.Clear();
+                    for (int i = 0; para!=null && i < para.Length; i++)
+                    {
+                        cmd.Parameters.Add(para[i]);
+                    }
+
                     cmd.CommandTimeout = Globals.g_CommandTimeOut;
                     SqlDataAdapter adap = new SqlDataAdapter(cmd);
                     DataSet dst = new DataSet();

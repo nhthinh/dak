@@ -1,0 +1,11 @@
+﻿@using DAK_MVC.Models;
+@{
+    string type = Model;
+    List<District> lstCity = District.GetListDistrictBycityID(1);
+}
+<select id="post_district">
+    @foreach (var item in lstCity)
+    {
+        <option value="@item.ID"> @item.Name</option>
+    }
+</select>

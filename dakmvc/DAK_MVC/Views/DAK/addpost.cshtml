@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "addpost";
+
 }
 
 <form action="/DAK/NewPost" method="post" id="formpost">
@@ -67,11 +68,15 @@
                                 <td>
                                     Chọn tỉnh thành
                                 </td>
-                                <td><select id="post_city"><option value="-Chọn-"></option></select></td>
+                                <td>
+                                    @Html.Partial("~/Views/Modules/_DropDownbox.cshtml", "");                                  
+                                </td>
                             </tr>
                             <tr>
                                 <td>Quận, huyện</td>
-                                <td><select id="post_district"><option value="-Chọn-"></option></select></td>
+                                <td><div id="divPartialQuanHuyenFilter">
+    @Html.Partial("~/Views/Modules/_DropDownbox2.cshtml", "");
+</div></td>
                             </tr>
                             <tr>
                                 <td>Phường, xã, thị trấn</td>

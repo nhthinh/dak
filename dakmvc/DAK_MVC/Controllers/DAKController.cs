@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace DAK_MVC.Controllers
 {
@@ -52,9 +53,14 @@ namespace DAK_MVC.Controllers
 
         public ActionResult ListCity()
         {
-        //    return View("_ListCheckbox");
-         //   return PartialView();
-            return PartialView("~/Views/Modules/_ListCheckbox.cshtml", "City");
+            //    return View("_ListCheckbox");
+            //   return PartialView();
+          
+
+            List<City> lstCity = City.LoadCity();
+            
+        //    ViewBag.Message = lstCity.Select(x => new ListItem(x.Code, x.Name)).ToList();
+            return PartialView("~/Views/Modules/_ListCheckbox.cshtml", lstCity.Select(x => new ListItem(x.Code, x.Name)).ToList());
         }
 
         [HttpPost, ValidateAntiForgeryToken]
@@ -62,8 +68,15 @@ namespace DAK_MVC.Controllers
         {
             //    return View("_ListCheckbox");
             //   return PartialView();
-            string s =
-                  "dsfvdsd";
+            PartialView("~/Views/Modules/_DropDownbox.cshtml", "City");
         }
+
+        public ActionResult ListDistrict(int CityID)
+        {
+            List<District> lst = District.GetListDistrictBycityID(CityID);
+         //   ViewBag.Message = lst.Select(x => new ListItem(x.ID.ToString(), x.Name)).ToList();
+            return PartialView("~/Views/Modules/_DropDownbox2.cshtml", CityID.ToString());
+        }
+
     }
 }

@@ -1,0 +1,11 @@
+﻿@using DAK_MVC.Models;
+@{
+    string type = Model;
+    List<City> lstCity = City.LoadCity();
+}
+<select id="post_district" onchange="addpost_change_tinhthanh();">
+    @foreach (var item in lstCity)
+    {
+      <option value="@item.Code" > @item.Name</option>
+    }
+</select>
