@@ -64,98 +64,58 @@
                             </div>
                             <div class="tt-body">
                                 <div class="tt-header">Khu vực</div>
-                                <div class="tt-content">
+                                <div class="tt-content">                                   
                                     <div class="quick-filter-khu-vuc">
-                                    <div class="quick-filter-khu-vuc">
-                                        <div>
-                                            <table class="table-input-form">
-                                                <tr>
-                                                    <td>Thành phố / Tỉnh</td>
-                                                    <td>
-                                                       
-                                                        <div><input type="text" onclick="ThanhPhoFilter_Focus();" /></div>
-                                                        <div class="div-list-defaut list-input" id="divPartialThanhPhoFilter">
-                                                            
-                                                                @Html.Partial("~/Views/Modules/_ListCheckbox.cshtml","");
-                                                            
-                                                        </div>
+                                        <div class="div-table-default">
+                                            <div>
+                                                <div>Thành phố / Tỉnh</div>
+                                                <div>
+                                                    <select class="select-default">
+                                                        <option>- Chon -</option>
+                                                        <option>
+                                                            HCM
+                                                        </option>
+                                                        <option>Ha Noi</option>
+
+                                                    </select>
+                                                    <div style="display:none">
+                                                        <div><input type="text" onclick="ThanhPhoFilter_Focus(this);" /></div>
+                                                        <div class="list-checkbox-defaut list-input" id="divPartialThanhPhoFilter">
+                                                            @Html.Partial("~/Views/Modules/_ListCheckbox.cshtml", "")
 
 
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Quận / Huyện</td>
-                                                    <td>
-                                                        <div><input type="text" /></div>
-                                                        <div class="div-list-defaut list-input">
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Tất cả
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Quận 1
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Quận 2
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Quận 3
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Phường / Xã</td>
-                                                    <td>
-                                                        <div><input type="text" /></div>
-                                                        <div class="div-list-defaut list-input">
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Tất cả
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Phường 1
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Phường 2
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Phường 3
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>Quận / Huyện</div>
+                                                <div>
+                                                    <select class="select-default">
+                                                        <option>- Chon -</option>
+                                                        <option>
+                                                            quan 1
+                                                        </option>
+                                                        <option>quan 2</option>
+
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>Phường / Xã</div>
+                                                <div>
+                                                    <select class="select-default">
+                                                        <option>- Chon -</option>
+                                                        <option>
+                                                            phuong 1
+                                                        </option>
+                                                        <option>phuong 2</option>
+
+                                                    </select>
+
+                                                </div>
+                                            </div>                                            
                                         </div>
                                     </div>
                                 </div>
@@ -292,95 +252,40 @@
                                 <div class="tt-header">Nâng cao</div>
                                 <div class="tt-content">
                                     <div>
-                                        <div>
-                                            <table>
-                                                <tr>
-                                                    <td>Hướng</td>
-                                                    <td>
-                                                        <div><input type="text" /></div>
-                                                        <div class="div-list-defaut">
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Tất cả
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Đông
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Tây
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Nam
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Bắc
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Diện tích</td>
-                                                    <td>
-                                                        <div><input type="text" /></div>
-                                                        <div class="div-list-defaut">
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    Tất cả
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    < 30 m²
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    30 - 50 m²
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    50 - 70 m²
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                            <div>
-                                                                <label class="checkbox-default">
-                                                                    70 - 100 m²
-                                                                    <input type="checkbox" />
-                                                                    <span class="checkmark"></span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <div class="quick-filter-nang-cao">
+                                            <div class="div-table-default">                                                
+                                                <div>
+                                                    <div>Hướng</div>
+                                                    <div>
+                                                        <select class="select-default">
+                                                            <option>- Chon -</option>
+                                                            <option>
+                                                                Đông
+                                                            </option>
+                                                            <option>Tây</option>
+                                                            <option>Nam</option>
+                                                            <option>Bắc</option>
+
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div>Diện tích</div>
+                                                    <div>
+                                                        <select class="select-default">
+                                                            <option>- Chon -</option>
+                                                            <option>
+                                                                < 30 m²
+                                                            </option>
+                                                            <option> 30 - 50 m²</option>
+                                                            <option> 50 - 70 m²</option>
+                                                            <option> 70 - 100 m²</option> 
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                            </div>                                            
                                         </div>
                                     </div>
                                 </div>
